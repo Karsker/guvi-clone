@@ -1,0 +1,652 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Navigation Bar */
+nav {
+    display: flex;
+    padding: 10px 30px;
+    justify-content: space-between;
+    align-items: center;
+    color: #6b727e;
+    /* border: solid 2px red; */
+}
+
+#divNavLinks {
+    display: none;
+    gap: 45px;
+    align-items: center;
+}
+
+/* #labelHamburger {
+    margin-right: 15px;
+} */
+
+#checkSidebar {
+    display: none;
+}
+
+#checkCloseSidebar {
+    display: none;
+}
+
+#checkSidebar:checked ~ #divSidebar{
+    display: flex;
+}
+
+.divNavItems {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+    nav {
+        justify-content: space-between;
+    }
+    #divNavLinks {
+        display: flex;
+    }
+
+    #labelHamburger {
+        display: none;
+    }
+
+
+}
+
+/* main section*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* border: solid 2px blue; */
+}
+#imgAppInstallDesktop {
+    width: 100%;
+    display: none;
+}
+
+#imgAppInstallMobile {
+    width: 100vw;
+}
+
+#sectionPartners {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 30px;
+    align-items: center;
+    background-color: #f6f6f8;
+    /* border: solid 1px blue; */
+}
+
+#divPartners {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* border: solid 2px black; */
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.partnerBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    /* margin: 10px 20px; */
+    /* border: solid 1px red; */
+}
+
+#sectionUpskill {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 30px;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    /* border: solid 1px green; */
+    font-weight: 400;
+    
+}
+
+#sectionUpskill h1 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+#sectionUpskill div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sectionUpskill p {
+    line-height: 30px;
+    font-size: 17px;
+    color: #707070;
+}
+#sectionUpskill img {
+    width: 60%;
+    height: auto;
+    /* border: solid 1px red;    */
+}
+
+#sectionAwards {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 30px 30px;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1200px;
+    /* border: solid 1px green; */
+    color: #707070;
+    font-weight: 400;
+    text-align: center;
+    line-height: 30px;
+}
+
+#sectionAwards img {
+    width: 300px;
+    
+}
+
+/* GUVI offerings section */
+
+#sectionOfferings {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    padding: 30px 30px;
+    margin: 50px 0;
+    justify-content: center;
+    gap: 50px;
+    /* border: solid 1px green; */
+    /* color: #707070; */
+    font-weight: 400;
+    text-align: center;
+    line-height: 30px;
+    background-color: #f6f6f8
+}
+
+#offeringBanner {
+    width: 100%;
+}
+
+#divOfferings {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    /* border: solid 1px red; */
+}
+
+.offeringCard {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    padding: 20px 30px;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 2px 5px 10px #c9c9c9;
+}
+
+.offeringCard h2 {
+    font-size: 16px;
+    font-weight: 700;
+}
+.offeringCard>img {
+    width: 30px;
+    height: auto;
+}
+
+.takeALook {
+    color: #0dba4c;
+    font-weight: 500;
+}
+
+
+#spanGuviFullForm {
+    font-size: 20px;
+    color: #707070;
+    background-color: #f6f7f9;
+    width: fit-content;
+    padding: 10px 10px;
+    margin: 20px 0;
+}
+
+/* Latest course section */
+#sectionCourses {
+    width: 100%;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    padding: 30px 30px;
+    margin: 40px 0;
+    justify-content: center;
+    gap: 30px;
+    /* border: solid 1px green; */
+    /* color: #707070; */
+    font-weight: 400;
+    text-align: center;
+    line-height: 30px;
+
+}
+
+#sectionCourses h1 {
+    font-size: 30px;
+}
+
+#selectCourses {
+    padding: 10px 10px;
+    border: solid 1px #c9c9c9;
+}
+
+#divCourseTabs {
+    display: none;
+}
+
+.divTabsContainer {
+    display: flex;
+
+}
+
+.divTab {
+    background-color: #f6f7f9;
+    padding: 5px 20px;
+    font-size: 15px;
+    color: #191919;
+}
+
+.activeTab {
+    background-color: #e6f6e9;
+    color: black;
+}
+
+#divCoursesContainer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow: auto;
+    /* border: solid 2px blue; */
+    white-space: nowrap;
+}
+
+
+.courseTile {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    /* border: solid 2px red; */
+    box-shadow: 5px 5px 15px #c9c9c9;
+    text-align: left;
+}
+.courseTile h2 {
+    font-size: 16px;
+}
+.courseTile .imageContainer {
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.imageContainer > img {
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.courseDesc {
+    padding: 15px 15px;
+}
+.courseTile .courseDesc  span{
+    color: #707070;
+}
+
+.spanCoursePrice {
+    z-index: 1;
+    font-size: 15px;
+    position: absolute;
+    top: 42%;
+    left: 2%;
+    background-color: #1c73e4;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.btnExplore {
+    background-color: #0eba4c;
+    padding: 15px 15px;
+    width: fit-content;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+.premium {
+    background-color: #f8473e;
+}
+
+/* Practice section */
+#sectionPractice {
+    width: 100%;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    padding: 30px 30px;
+    margin: 40px 0;
+    justify-content: center;
+    gap: 30px;
+    /* border: solid 1px green; */
+    /* color: #707070; */
+    font-weight: 400;
+    text-align: center;
+    line-height: 30px;
+
+}
+
+#sectionPractice h1 {
+    font-size: 25px;
+}
+
+#practiceDesc {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    /* border: solid 2px red; */
+    max-width: 1200px;
+    text-align: left;
+}
+
+#practiceDesc h2 {
+    color: black;
+    font-size: 25px;
+}
+
+#practiceDesc > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 15px;
+    color: #707070
+}
+
+#divPracticeDesktop {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+#divPracticeMobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.practiceDropdown {
+    width: 100%;
+    box-shadow: 2px 2px 10px  #c9c9c9;
+    text-align: left;
+    padding: 15px 15px;
+    color: #636363
+}
+
+/* Zen Classes */
+#sectionZenClasses {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    padding: 30px 30px;
+    margin: 50px 0;
+    justify-content: center;
+    gap: 50px;
+    /* border: solid 1px green; */
+    /* color: #707070; */
+    font-weight: 400;
+    text-align: center;
+    line-height: 30px;
+    background-color: #f6f6f8
+}
+
+#zenClassesBanner {
+    width: 100%;
+}
+
+#divZenPrograms {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    /* border: solid 1px red; */
+}
+
+/* Companies */
+#sectionCompanies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding: 50px 20px;
+}
+
+#sectionCompanies > h1 {
+    font-size: 30px;
+}
+#divCompaniesCarousel {
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    gap: 10%;
+    /* border: solid 2px red; */
+    overflow: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+}
+
+#divCompaniesCarousel > img{
+    flex-shrink: 0;
+}
+
+/* GUVI for corporates */
+#sectionCorporates {
+    width: 100%;
+    background-color: #f6f6f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 60px 30px;
+}
+#sectionCorporates h1 {
+    font-size: 30px;
+    /* margin-top: 50px; */
+}
+#divCorporateSolutions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+}
+
+#divCorporateSolutions > img{
+    width:200px;
+    height: auto;
+}
+
+/* Stats section */
+#sectionStats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding: 60px 20px;
+}
+
+#sectionStats h1 {
+    font-size: 30px;
+}
+
+#divStats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+}
+
+.statTile {
+    background-color: #f6f7f9;
+    text-align: center;
+    font-weight: 600;
+    padding: 15px 0;
+    border-radius: 5px;
+    line-height: 45px;
+    width: 100%;
+}
+
+.statTile .statCount {
+    font-size: 35px;
+    color: #0eba4c;
+    
+  
+}
+
+@media screen and (min-width: 720px) {
+    #imgAppInstallMobile {
+        display: none;
+    }
+    #imgAppInstallDesktop {
+        display: block;
+    }
+
+    #sectionUpskill {
+        flex-direction: row;
+    }
+
+    #sectionAwards {
+        flex-direction: row;
+        max-width: 1200px;
+        background-color: #f6f6f8;
+        border-radius: 5px;
+    }
+
+    #sectionOfferings {
+        flex-direction: row-reverse;
+    }
+    #divOfferings {
+        width: 50%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    /* Zen Classes */
+
+    #sectionZenClasses {
+        flex-direction: row-reverse;
+    }
+    #divZenPrograms {
+        width: 50%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .offeringCard {
+        width: 300px;
+    }
+    .awardGraphic {
+        width: 300px;
+        height: auto;
+    }
+
+    
+    
+}
+
+@media screen and (min-width: 600px) {
+    .courseTile {
+        width: 50%;
+    }
+
+    .statTile {
+        width: 40%;
+    }
+
+    
+}
+
+@media screen and (min-width: 1200px) {
+    #divCompaniesCarousel {
+        gap: 20px;
+        justify-content: center;
+        /* overflow: hidden; */
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .courseTile {
+        width: 30%;
+    }
+
+    /* Latest courses section */
+    #selectCourses {
+        display: none;
+    }
+    #divCourseTabs {
+        display: flex;
+    }
+
+    #divPracticeMobile {
+        display: none;
+    }
+    #divPracticeDesktop {
+        display: flex;
+    }
+    
+    /* Stats section */
+    .statTile {
+        width: 20%;
+    }
+}
+
+
+@media screen and (min-width: 1500px) {
+    .courseTile {
+        width: 20%;
+    }
+
+    
+}

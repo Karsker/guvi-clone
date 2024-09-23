@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>GUVI | Learn to code in your native language</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="divNavItems">
+            <label id="labelHamburger" for="checkSidebar">
+                <img src="assets/hamburger-icon.png" alt="hamburger-icon" width="25px">
+
+            </label>
+            <input id="checkSidebar" type="checkbox">
+            <img src="assets/guvi-text-logo.webp" alt="guvi-logo" width="95px">
+        </div>
+        <div class="divNavItems">
+            <div id="divNavLinks">
+                <span>Courses</span>
+                <span>Live Classes</span>
+                <span>Practice</span>
+                <span>Resources</span>
+                <span>Our Solutions </span>
+            </div>
+            <img src="assets/help-icon.png" alt="help" width="25px">
+        </div>
+    </nav>
+    <main>
+
+        <img id="imgAppInstallDesktop" src="assets/App_Installation_Poster.avif" alt="banner">
+        <img id="imgAppInstallMobile" src="assets/App_Installation_Poster-mobile.avif"
+            alt="App_Installation_Poster-mobile">
+
+        <section id="sectionPartners">
+            <h1>We are accredited by</h1>
+            <div id="divPartners">
+                <span class="partnerBlock">
+                    <img src="assets/institutions/nsdc.webp" alt="nsdc-logo">
+                </span>
+                <span class="partnerBlock">
+                    <img src="assets/institutions/google-for-education.webp" alt="google-for-education">
+                </span>
+                <span class="partnerBlock ">
+                    <img src="assets/institutions/aicte.webp" alt="aicte-logo">
+                </span>
+                <span class="partnerBlock ">
+                    <img src="assets/institutions/iso.webp" alt="iso-logo">
+                </span>
+                <span class="partnerBlock ">
+                    <img src="assets/institutions/skill-partner.webp" alt="skill-partner">
+                </span>
+                <span class="partnerBlock">
+                    <img src="assets/institutions/IIT-Ropar.webp" alt="IIT-Ropar-logo">
+                </span>
+
+            </div>
+        </section>
+        <section id="sectionUpskill">
+            <img src="assets/vernacularUpskill.webp" alt="vernacularUpskill">
+            <div>
+                <h1>Leading EdTech Platform for <span style="color: #0dba4c">Vernacular Upskilling</span></h1>
+                <p>GUVI – India’s premier tech-powered vernacular EdTech platform, incubated by IIT-M, IIM-A, and a
+                    prestigious part of the HCL group, leads the way in tech upskilling with instruction in regional and
+                    international languages. With over 3 million global learners, GUVI focuses on providing personalized
+                    learning solutions for its learners right from online learning, upskilling, and recruitment
+                    opportunities in world-class quality.</p>
+
+                <span id="spanGuviFullForm">
+                    <span style="color: #0dba4c; font-weight: bold;">GUVI</span> - <b><u>G</u></b>rab <b><u>U</u></b>r
+                    <b><u>V</u></b>ernacular <b><u>I</u></b>mprint
+                </span>
+            </div>
+        </section>
+        <section id="sectionAwards">
+            <div class="awardGraphic">
+                <span style="font-weight: 600; margin-bottom: 100px;">Our Awards and Achievements</span>
+
+                <br>
+                <img src="assets/bestPersonalisedLearningProgram-graphic.webp" alt="award-graphic">
+                <br>
+                Awarded by ENTREPRENEUR INDIA for having the best online personalized learning programs.
+            </div>
+            <div>
+                <img src="assets/bestPersonalisedLearningProgram-picture.webp" alt="learning-programs-picture">
+            </div>
+        </section>
+        <section id="sectionOfferings">
+            <div>
+                <img id="offeringBanner" src="assets/guvi-offerings/guviOfferings-picture.webp"
+                    alt="guvi-offering-picture">
+            </div>
+
+            <div id="divOfferings">
+                <div class="offeringCard">
+                    <img src="assets/guvi-offerings/self-paced-icon.webp" alt="self-paced-icon">
+                    <h2>Self-Paced Courses</h2>
+                    <span>Learn & get certified via online classes</span>
+                    <span class="takeALook">Take a look ></span>
+                </div>
+
+                <div class="offeringCard">
+                    <img src="assets/guvi-offerings/live-classes-icon.webp" alt="live-classes-icon">
+                    <h2>LIVE Classes</h2>
+                    <span>Upskill live online with placement guidance</span>
+                    <span class="takeALook">Take a look ></span>
+                </div>
+
+                <div class="offeringCard">
+                    <img src="assets/guvi-offerings/interactice-practice-icon.webp" alt="interactice-practice-icon">
+                    <h2>Interactive Practice Platforms</h2>
+                    <span>Learn through Hands-on coding experience</span>
+                    <span class="takeALook">Take a look ></span>
+                </div>
+
+                <div class="offeringCard">
+                    <img src="assets/guvi-offerings/search-icon.webp" alt="search-icon">
+                    <h2>For Corporates</h2>
+                    <span>One-stop solution for training, hiring, & CSR</span>
+                    <span class="takeALook">Take a look ></span>
+                </div>
+            </div>
+        </section>
+        <section id="sectionCourses">
+            <h1>Learn Tech from Latest Courses</h1>
+            <span>Explore 175+ Premium Courses with New Course Additions every Month.</span>
+            <!-- Dropdown for small screens -->
+            <select name="selectCourses" id="selectCourses">
+                <option value="database">Database and Cloud Computing</option>
+                <option value="programming">Programming Languages</option>
+                <option value="network">Network and Security</option>
+                <option value="dataScience">Data Science</option>
+                <option value="webDev">Web Development</option>
+                <option value="softwareTesting">Software Testing and Automation</option>
+            </select>
+
+            <!-- Tab interface for large screens -->
+
+            <div id="divCourseTabs" class="divTabsContainer">
+                <div class="divTab activeTab">
+                    Database and Cloud Computing
+                </div>
+                <div class="divTab">
+                    Programming Languages
+                </div>
+                <div class="divTab">
+                    Network and Security
+                </div>
+                <div class="divTab">
+                    Data Science
+                </div>
+                <div class="divTab">
+                    Web Development
+                </div>
+                <div class="divTab">
+                    Software Testing and Automation
+                </div>
+            </div>
+
+            <div id="divCoursesContainer">
+                <!-- Courses blocks -->
+                <div class="courseTile">
+                    <div class="imageContainer">
+                        <img src="assets/courses/java.avif" alt="jdbc-image">
+                    </div>
+                    <span class="spanCoursePrice">Free</span>
+                    <div class="courseDesc">
+                        <h2>JDBC</h2>
+                        <span>Hindi 2004 Enrolled</span>
+                    </div>
+                </div>
+
+                <div class="courseTile">
+                    <div class="imageContainer">
+                        <img src="assets/courses/sql.avif" alt="sql-image">
+                    </div>
+                    <span class="spanCoursePrice">Free</span>
+                    <div class="courseDesc">
+                        <h2>SQL</h2>
+                        <span>Tamil 2014 Enrolled</span>
+                    </div>
+                </div>
+
+                <div class="courseTile">
+                    <div class="imageContainer">
+                        <img src="assets/courses/sql.avif" alt="sql-image">
+                    </div>
+                    <span class="spanCoursePrice">Free</span>
+                    <div class="courseDesc">
+                        <h2>SQL</h2>
+                        <span>Bengali 2008 Enrolled</span>
+                    </div>
+                </div>
+
+                <div class="courseTile">
+                    <div class="imageContainer">
+                        <img src="assets/courses/sqlite.avif" alt="sqlite-image">
+                    </div>
+                    <span class="spanCoursePrice">Free</span>
+                    <div class="courseDesc">
+                        <h2>Sqlite</h2>
+                        <span>Tamil 2006 Enrolled</span>
+                    </div>
+                </div>
+
+                <div class="courseTile">
+                    <div class="imageContainer">
+                        <img src="assets/courses/mongodb.avif" alt="mongodb-image">
+                    </div>
+                    <span class="spanCoursePrice premium">Premium</span>
+                    <div class="courseDesc">
+                        <h2>MongoDB</h2>
+                        <span>Tamil 70047 Enrolled</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="btnExplore">Explore Courses</button>
+        </section>
+
+        <section id="sectionPractice">
+            <h1>Learn. Practice. Earn. Have Fun!</h1>
+
+            <div id="divPracticeMobile">
+                <div class="practiceDropdown">
+                    Codekata
+                </div>
+                <div class="practiceDropdown">
+                    Webkata
+                </div>
+                <div class="practiceDropdown">
+                    Debugging
+                </div>
+                <div class="practiceDropdown">
+                    IDE
+                </div>
+                <div class="practiceDropdown">
+                    Rewards
+                </div>
+                <div class="practiceDropdown">
+                    Referral
+                </div>
+                <div class="practiceDropdown">
+                    Forum
+                </div>
+            </div>
+            <div id="divPracticeDesktop">
+                <div class="divTabsContainer">
+                    <div class="divTab activeTab">
+                        Codekata
+                    </div>
+                    <div class="divTab">
+                        Webkata
+                    </div>
+                    <div class="divTab">
+                        Debugging
+                    </div>
+                    <div class="divTab">
+                        IDE
+                    </div>
+                    <div class="divTab">
+                        Rewards
+                    </div>
+                    <div class="divTab">
+                        Referral
+                    </div>
+                    <div class="divTab">
+                        Forum
+                    </div>
+                </div>
+    
+                <div id="practiceDesc">
+                    <img src="assets/laptop-codekata.webp" alt="codekata">
+                    <div>
+                        <h2>CodeKata</h2>
+                        <p>
+                            An interactive platform for programming practice with 1500+ coding problems curated by top
+                            programming veterans in the IT industry. CodeKata tracks your performance and develops your
+                            coding profile to showcase your skill set in the job recruitment process. Boost your potential
+                            to crack coding interviews by solving CodeKata problems.
+                        </p>
+                        <button class="btnExplore">
+                            Expore CodeKata
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section id="sectionZenClasses">
+            <div>
+                <img id="zenClassesBanner" src="assets/zen-classes/zen-class-picture.webp"
+                    alt="zen-class-picture">
+            </div>
+
+            <div id="divZenPrograms">
+                <div class="offeringCard">
+                    <img src="assets/zen-classes/full-stack-icon.webp" alt="full-stack-icon">
+                    <h2>Full Stack Development</h2>
+                    <span>Learn JavaScript, HTML, CSS & more</span>
+                    <span class="takeALook">Know More ></span>
+                </div>
+
+                <div class="offeringCard">
+                    <img src="assets/zen-classes/data-science-icon.webp" alt="data-science-icon">
+                    <h2>Data Science</h2>
+                    <span>Learn Python, NLP, Tableau & more</span>
+                    <span class="takeALook">Know More ></span>
+                </div>
+
+                <div class="offeringCard">
+                    <img src="assets/zen-classes/ui-ux-icon.webp" alt="ui-ux-icon">
+                    <h2>UI UX Design</h2>
+                    <span>Learn UI UX principles, Figma, Miro & more</span>
+                    <span class="takeALook">Know More ></span>
+                </div>
+
+                <div class="offeringCard">
+                    <img src="assets/zen-classes/automation-icon.webp" alt="automation-icon">
+                    <h2>Automation & Testing</h2>
+                    <span>Learn Selenium, Python, Java & more</span>
+                    <span class="takeALook">Know More ></span>
+                </div>
+                <br>
+                <button class="btnExplore">Explore More Programs</button>
+            </div>
+        </section>
+
+        <section id="sectionCompanies">
+            <h1>Our Learners Work at</h1>
+            <div id="divCompaniesCarousel">
+                <img src="assets/companies/flipkart-logo.webp" alt="flipkart-logo">
+                <img src="assets/companies/freshworks-logo.webp" alt="freshworks-logo">
+                <img src="assets/companies/juspay-logo.webp" alt="juspay-logo">
+                <img src="assets/companies/chargebee-logo.webp" alt="chargebee-logo">
+                <img src="assets/companies/zoho-logo.webp" alt="zoho-logo">
+                <img src="assets/companies/paypal-logo.webp" alt="paypal-logo">
+                <img src="assets/companies/amazon-logo.webp" alt="amazon-logo">
+                <img src="assets/companies/tcs-logo.webp" alt="tcs-logo">
+            </div>
+        </section>
+
+        <section id="sectionCorporates">
+            <h1>GUVI for Corporates</h1>
+            <span>Explore our customized corporate solutions for your company!</span>
+            <div id="divCorporateSolutions">
+                <img src="assets/corporates/corporate-training.png" alt="corporate-training">
+                <img src="assets/corporates/corporate-hiring.png" alt="corporate-hiring">
+                <img src="assets/corporates/corporate-responsiblity.png" alt="corporate-responsiblity">
+                <img src="assets/corporates/assessment.png" alt="assessment">
+                <img src="assets/corporates/campus-hiring.png" alt="campus-hiring">
+            </div>
+            <button class="btnExplore" style="padding:15px 30px">Learn more</button>
+        </section>
+
+        <section id="sectionStats">
+            <h1>We are proud of...</h1>
+            <div id="divStats">
+                <div class="statTile">
+                    <span class="statCount">3125865</span>
+                    <br>
+                    <span>Learners</span>
+                </div>
+
+                <div class="statTile">
+                    <span class="statCount">195</span>
+                    <br>
+                    <span>Mentors</span>
+                </div>
+
+                <div class="statTile">
+                    <span class="statCount">37461349</span>
+                    <br>
+                    <span>Lines of code submission</span>
+                </div>
+
+                <div class="statTile">
+                    <span class="statCount">1673</span>
+                    <br>
+                    <span>Videos</span>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
