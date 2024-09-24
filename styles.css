@@ -92,9 +92,10 @@ main {
 #divPartners {
     width: 100%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     /* border: solid 2px black; */
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     gap: 10px;
     
 }
@@ -104,7 +105,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    flex-shrink: 0;
     /* margin: 10px 20px; */
     /* border: solid 1px red; */
 }
@@ -718,6 +719,141 @@ main {
     font-weight: 500;
 }
 
+/* Footer */
+footer {
+    background-color: #2a2a2a;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    padding: 50px 20px;
+}
+
+footer p {
+    color: #c9c9c9;
+    line-height: 30px;
+}
+#footerMobile {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#divFooterDropdowns {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#divFooterGuviLogo {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+#divFooterGuviLogo img{
+    height: 40px;
+}
+
+#divFooterGuviLogo button {
+    background-color: transparent;
+    color: white;
+    border: solid 1px white;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+#divFooterMobileSocialIcons {
+    display: flex;
+    margin: 10px 0;
+    gap: 10px;
+}
+
+#divFooterMobileSocialIcons img {
+    height: 40px;
+}
+
+#footerDesktop {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+#footerDesktopCategories {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    width: 100%;
+}
+
+#footerDesktopAbout {
+    display: flex;
+    padding: 10px 0;
+    gap: 40px;
+}
+
+#footerDesktopAbout img {
+    width: 100px;
+}
+
+#footerDesktopAbout button {
+    background-color: transparent;
+    color: white;
+    border: solid 1px white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    width: 200px;
+    margin: 15px 0;
+}
+
+#divFooterDesktopSocialIcons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 150px;
+}
+
+#divFooterDesktopSocialIcons img {
+    width: 40px;
+}
+
+.divFooterCategory {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 15px;
+}
+
+.verticalCategory {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.categoryItem {
+    color: #c9c9c9;
+}
+
+.footerEndLinks {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    color: #c9c9c9
+}
+
+.footerEndLinks a {
+    color: #c9c9c9
+}
+
+.linksMobile {
+    justify-content: start;
+    flex-direction: column;
+    font-size: 14px;
+}
+
 @media screen and (min-width: 720px) {
     #imgAppInstallMobile {
         display: none;
@@ -851,6 +987,17 @@ main {
         justify-content: center;
         max-width: 1000px;
     }
+
+    /* Footer */
+    #footerDesktop {
+        display: flex;
+        max-width: 1200px;
+    }
+
+    #footerMobile {
+        display: none;
+    }
+    
     
 }
 
