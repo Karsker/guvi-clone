@@ -186,9 +186,19 @@ main {
     background-color: #f6f6f8
 }
 
+#sectionOfferings h1 {
+    font-size: 30px;
+}
+
 #offeringBanner {
     width: 100%;
 }
+
+#divOfferingsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
 
 #divOfferings {
     display: flex;
@@ -424,18 +434,19 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    
     align-items: center;
     padding: 30px 30px;
     margin: 50px 0;
     justify-content: center;
     gap: 50px;
-    /* border: solid 1px green; */
-    /* color: #707070; */
     font-weight: 400;
     text-align: center;
     line-height: 30px;
     background-color: #f6f6f8
+}
+
+#sectionZenClasses h1 {
+    font-size: 30px;
 }
 
 #zenClassesBanner {
@@ -872,7 +883,12 @@ footer p {
     }
 
     #sectionOfferings {
+        flex-direction: column;
+    }
+
+    #divOfferingsContainer {
         flex-direction: row-reverse;
+        justify-content: center;
     }
     #divOfferings {
         width: 50%;
@@ -883,7 +899,13 @@ footer p {
     /* Zen Classes */
 
     #sectionZenClasses {
+        flex-direction: column;
+    }
+    #divZenProgramsContainer {
+        display: flex;
         flex-direction: row-reverse;
+        justify-content: center;
+        gap: 10px;
     }
     #divZenPrograms {
         width: 50%;
