@@ -92,8 +92,6 @@ main {
 #divPartners {
     width: 100%;
     display: flex;
-    /* justify-content: center; */
-    /* border: solid 2px black; */
     flex-wrap: nowrap;
     overflow-x: auto;
     gap: 10px;
@@ -1003,9 +1001,12 @@ footer p {
 
 
 @media screen and (min-width: 1500px) {
+
     .courseTile {
         width: 20%;
     }
 
-    
+    #divPartners {
+        justify-content: center;
+    }
 }
